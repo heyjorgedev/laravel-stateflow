@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace HeyJorgeDev\LaravelStateflow\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelStateflowCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-stateflow';
 
     public $description = 'My command';
 
