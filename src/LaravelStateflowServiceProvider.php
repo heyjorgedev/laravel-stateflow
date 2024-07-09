@@ -2,9 +2,9 @@
 
 namespace HeyJorgeDev\LaravelStateflow;
 
+use HeyJorgeDev\LaravelStateflow\Commands\LaravelStateflowCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use HeyJorgeDev\LaravelStateflow\Commands\LaravelStateflowCommand;
 
 class LaravelStateflowServiceProvider extends PackageServiceProvider
 {

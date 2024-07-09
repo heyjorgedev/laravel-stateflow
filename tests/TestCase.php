@@ -2,9 +2,9 @@
 
 namespace HeyJorgeDev\LaravelStateflow\Tests;
 
+use HeyJorgeDev\LaravelStateflow\LaravelStateflowServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use HeyJorgeDev\LaravelStateflow\LaravelStateflowServiceProvider;
 
 class TestCase extends Orchestra
 {

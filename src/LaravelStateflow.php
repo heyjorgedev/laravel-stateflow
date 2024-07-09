@@ -2,6 +2,4 @@
 
 namespace HeyJorgeDev\LaravelStateflow;
 
-class LaravelStateflow
-{
-}
+class LaravelStateflow {}
