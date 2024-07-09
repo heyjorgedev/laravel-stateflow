@@ -6,19 +6,30 @@ use HeyJorgeDev\LaravelStateflow\Transition;
 
 class ManualTransition implements Transition
 {
-    /**
-     * @param string $action
-     * @param string|array<string> $from
-     * @param string $to
-     * @param \Closure|class-string|callable $closure
-     */
-    public function __construct(
-        private string $action,
-        private string|array $from,
-        private string $to,
-        private \Closure|string|array $closure,
-    ) {
+    public function __construct(string $name)
+    {
     }
+
+    public static function make(string $name): self
+    {
+        return new self($name);
+    }
+
+    public function from(string $state): self
+    {
+        return $this;
+    }
+
+    public function to(string $state): self
+    {
+        return $this;
+    }
+
+    public function action(callable|\Closure $action): self
+    {
+        return $this;
+    }
+
 
     public function toArray()
     {

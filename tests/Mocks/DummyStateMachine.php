@@ -23,10 +23,16 @@ class DummyStateMachine extends StateMachine
     public function transitions(): array
     {
         return [
-            new ManualTransition('turnOn', 'off', 'on', function () {
-                // Do something inline
-            }),
-            new ManualTransition('turnOff', 'on', 'off', [$this, 'exampleTurnOff']),
+            ManualTransition::make('turnOn')
+                ->from('off')
+                ->to('on')
+                ->action(function () {
+                    // Inline logic
+                }),
+            ManualTransition::make('off')
+                ->from('on')
+                ->to('off')
+                ->action([$this, 'exampleTurnOff'])
         ];
     }
 
