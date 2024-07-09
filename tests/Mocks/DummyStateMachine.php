@@ -32,11 +32,12 @@ class DummyStateMachine extends StateMachine
             ManualTransition::make('off')
                 ->from('on')
                 ->to('off')
-                ->action([$this, 'exampleTurnOff'])
+                ->action([$this, 'exampleTurnOff']),
         ];
     }
 
-    public function exampleTurnOff() {
+    public function exampleTurnOff()
+    {
         // Do something as a method of something
     }
 }

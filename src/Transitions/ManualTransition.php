@@ -6,9 +6,7 @@ use HeyJorgeDev\LaravelStateflow\Transition;
 
 class ManualTransition implements Transition
 {
-    public function __construct(string $name)
-    {
-    }
+    public function __construct(string $name) {}
 
     public static function make(string $name): self
     {
@@ -29,7 +27,6 @@ class ManualTransition implements Transition
     {
         return $this;
     }
-
 
     public function toArray()
     {
